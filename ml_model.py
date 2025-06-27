@@ -253,7 +253,7 @@ def main() -> list[str]:
             pred = m.predict(x)
             percentage_diffs.append(((abs(pred - y)/y)*100))
 
-        model_tests.append(f'{min(percentage_diffs)}-{max(percentage_diffs)}')
+        model_tests.append(f'{min(percentage_diffs)}-{max(percentage_diffs)}') # error percentage range.
     return model_tests
 
 
